@@ -1,0 +1,492 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+--buttonColor: #ADEFD1FF;
+--background: #101820ff;
+--secondary: #00203FFF;
+--paragraphText: #F1F4FFFF;
+--textColor: #F2AA4CFF;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background-color: var(--secondary);
+    height: 80px;
+    width: 100%;
+}
+span{
+    color: var(--textColor);
+}
+label.main-portfolio{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.menu-iconbtn{
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check-box{
+    display: none;
+}
+.main-content {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.main-text {
+    flex: 1; 
+    padding: 20px;
+}
+.main-image {
+    max-width: 100%;
+    display: block;
+    padding-right: 150px;
+    margin-bottom: -35px;
+}
+.main-content{
+    background-color: var(--background);
+    height: 92vh;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.main-text{
+    margin-left: 150px;
+}
+.main-text h1{
+    color: var(--textColor);
+    font-size: 55px;
+}
+.main-text p{
+    color: var(--paragraphText);
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.main-text a{
+    font-size: 20px;
+    background: linear-gradient( to top,#F2AA4CFF, #ADEFD1FF );
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+}
+.main-text a:hover{
+        background: linear-gradient( to top, #ADEFD1FF, #F2AA4CFF );;
+}
+.about-me-section{
+    background-color: var(--paragraphText);
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 50vh;
+    width: 100%;
+}
+.about-container{
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.about-header {
+    font-size: 40px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.about-content{
+    font-size: 20px;
+    line-height: 1.9;
+    text-align: center;
+    max-width: 800px; 
+}
+.Technology-stack{
+    height: 60vh;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: var(--background);
+}
+.stack-header{
+    color: var(--paragraphText);
+    font-size: 40px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.stack-container {
+    margin-bottom: 20px;
+}
+
+.my-stack {
+    display: flex;
+    justify-content: center;
+}
+
+.my-stack svg {
+    margin: 0 20px;
+    height: 5rem;
+}
+.my-stack p{
+    color: var(--paragraphText);
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+}
+.project-area{
+    width: 100%;
+    height: 80vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: var(--paragraphText);
+}
+.project-card img{
+    filter: drop-shadow(0 0 .3rem #F1F4FFFF);
+    height: 20rem;
+
+}
+.project-card{
+    border-radius: 10px;
+    background-color: var(--background);
+    padding: 20px;
+}
+.project-area h1{
+    font-weight: 700;
+    font-size: 60px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.dot{
+    font-size: 25px;
+}
+.project-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+}
+.project-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.project-section .project-card{
+    flex: 1;
+    margin: 20px 20px;
+}
+.project-section .project-card h4{
+    margin: 15px 0px;
+    font-size: 20px;
+    color: var(--paragraphText);
+}
+.project-section .project-card p{
+    font-size: 17px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    color: var(--paragraphText);
+}
+.project-section .project-card a{
+    font-size: 15px;
+    background: linear-gradient( to top,#F2AA4CFF, #ADEFD1FF );
+    color: var(--background);
+    padding: 3px;
+    border-radius: 5px;
+}
+.project-section .project-card a:hover{
+        background: linear-gradient( to top, #ADEFD1FF, #F2AA4CFF );;
+}
+.contact-area{
+    background-color: var(--background);
+    width: 100%;
+    height: 20vh;
+    padding-top: 10px;
+    padding-left: 180px;
+    padding-right: 200px;
+}
+.infomation a{
+    padding-top: 10ch;
+}
+.socialmedia{
+    float: right;
+}
+.developer{
+        margin-top: 70px;
+        text-align: center;
+        color: var(--paragraphText);
+}
+.dev-name{
+    transition: .3s;
+    color: var(--textColor);
+}
+.gmail{
+    transition: .3s;
+    color: var(--paragraphText);
+}
+.information a, .socialmedia a {
+    transition: .3s;
+    color: white;
+    padding: 5px;
+}
+.socialmedia a:hover{
+    color: var(--textColor);
+}
+.information a:hover{
+    color: var(--textColor);
+}
+.gmail:hover{
+    color: var(--textColor);
+}
+.dev-name:hover{
+    color: var(--buttonColor);
+}
+
+
+
+@media (max-width: 950px) {
+    label.main-portfolio{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    } 
+    .main-image{
+        display: none;
+    }
+    .about-me-section{
+        padding: 0;
+
+    }
+    .about-container{
+        padding: 0;
+        width: 80%;
+    }
+    .about-header {
+        font-size: 30px;
+    }
+    .about-content{
+        font-size: 20px;
+        line-height: 1.9;
+        text-align: center;
+        max-width: 800px; 
+    }
+
+    
+}
+
+
+
+@media only screen and (max-width:670px) {
+    .main-content{
+        background-image: url(img/phone-backgroung.png);
+        background-repeat: no-repeat;
+        height: 100.3vh;
+    }
+    .main-image{
+        display: none;
+    }
+    .menu-iconbtn{
+        display: block;
+    }
+    ul{
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.747);
+        top: px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    label.main-portfolio{
+        font-size: 23px;
+        padding-left: 40px;
+    }
+    nav ul li a{
+        color: var(--background);
+        font-size: large;
+    }
+    a:hover{
+        background-color: var(--background);
+        color: white;
+        transition: .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    #check-box:checked ~ ul{
+        left: 0;
+    }
+    nav{
+        position: fixed;
+        z-index: 100;
+    }
+    .main-text{
+        margin: 0;
+        margin-top: 270px;
+        justify-content: center;
+        text-align: center;
+    }
+    .main-text h1{
+        margin-left: 0px;
+        color: var(--textColor);
+        font-size: 19px;
+    }
+    .main-text p{
+        color: var(--paragraphText);
+        font-size: 12px;
+        padding-bottom: 5px;
+        overflow: hidden;
+    }
+    .main-text a{
+        font-size: 10px;
+        background: linear-gradient( to top,#F2AA4CFF, #ADEFD1FF );
+        color: black;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    .about-me-section{
+        padding: 0;
+    }
+    .about-container{
+        padding: 0;
+        width: 80%;
+    }
+    .about-header {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .about-content{
+        font-size: 12px;
+        line-height: 1.9;
+        text-align: center;
+        max-width: 800px; 
+    }
+    .cert-btn{
+        font-size: 12px;
+        }
+    .stack-header{
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .my-stack svg {
+       margin: 0;
+       height: 4rem;
+       padding: 10px;
+    }
+    .stack-header{
+        font-size: 15px;
+        padding-bottom: 1px;
+    }
+    .Technology-stack{
+        height: 50vh;
+        padding-top: 15px;
+    }
+    .project-section{
+        flex-direction: column;
+    }
+    .project-card img{
+        height: 14rem;
+    
+    }
+    .project-card{
+        padding: 12px;
+    }
+    .project-area h1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .project-section .project-card h4{
+        font-size: 15px;
+    }
+    .project-section .project-card p{
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+    .project-section .project-card a{
+        font-size: 10px;
+    }
+    .project-area{
+        width: 100%;
+        height: 150vh;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: var(--paragraphText);
+    }
+    .contact-area{
+        height: auto;
+        padding: 12px;
+    }
+    .infomation a{
+        padding-top: 0;
+    }
+    .socialmedia{
+        float: right;
+    }
+    .developer{
+        font-size: 10px ;
+        margin-top: 50px;
+        padding-bottom: 10px;
+        text-align: center;
+        color: var(--paragraphText);
+    }
+    .dev-name{
+        color: var(--textColor);
+    }
+    .gmail{
+        font-size: 10px;
+        color: var(--paragraphText);
+    }
+    .information a, .socialmedia a {
+        font-size: 10px;
+        color: white;
+        padding: 5px;
+    }
+
+}
